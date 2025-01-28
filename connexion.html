@@ -11,29 +11,15 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f9;
-            display: flex;
-            height: 100vh;
-        }
-        .split-container {
-            display: flex;
-            width: 100%;
-            height: 120%;
-        }
-        .left-section {
-            flex: 1;
+            background: url('ch.jpg') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #ffffff;
-        }
-        .right-section {
-            flex: 1;
-            background: url('4.png') no-repeat center center;
-            background-size: cover;
+            height: 100vh;
         }
         .login-container {
-            background-color: white;
+            background-color: rgba(242, 239, 231, 0.8); /* Transparent white background */
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,12 +28,12 @@
             text-align: center;
         }
         .login-container img {
-            max-width: 100px;
+            max-width: 90px;
             margin-bottom: 20px;
         }
         .login-container h1 {
             font-size: 2rem;
-            color: #00509E;
+            color: #000000;
             margin-bottom: 20px;
         }
         .login-container label {
@@ -67,14 +53,14 @@
             font-size: 1rem;
         }
         .login-container button {
-            background-color: #00509E;
+            background-color: #000000;
             color: white;
             font-weight: 700;
             cursor: pointer;
             transition: background-color 0.3s;
         }
         .login-container button:hover {
-            background-color: #003366;
+            background-color: #012b55;
         }
         .login-container p {
             text-align: center;
@@ -91,37 +77,27 @@
     </style>
 </head>
 <body>
-    <div class="split-container">
-        <!-- Left Section with Form -->
-        <div class="left-section">
-            <div class="login-container">
-                <img src="logo2.png" alt="Logo">
-                <h1>Connexion</h1>
-                <form action="connexion.php" method="POST">
-                    <label for="role">Je suis :</label>
-                    <select id="role" name="role" required>
-                        <option value="admin">Admin</option>
-                        <option value="proprietaire">Propriétaire</option>
-                        <option value="visiteur">Visiteur</option>
-                    </select>
-                    
-                    <label for="nom_utilisateur">Nom d'utilisateur :</label>
-                    <input type="text" id="nom_utilisateur" name="nom_utilisateur" placeholder="Entrez votre nom d'utilisateur" required>
-                    
-                    <label for="mot_de_passe">Mot de passe :</label>
-                    <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Entrez votre mot de passe" required>
-                    
-                    <button type="submit">Se Connecter</button>
-                </form>
-                
-                <p>Pas encore inscrit ? <a href="creer_compte.html">Créer un compte</a></p>
-            </div>
-        </div>
-
-        <!-- Right Section with Image -->
-        <div class="right-section">
-            <!-- The background image is defined in CSS -->
-        </div>
+    <div class="login-container">
+        <img src="logo2.png" alt="Logo">
+        <h1>Connexion</h1>
+        <form action="connexion.php" method="POST">
+            <label for="role">Je suis :</label>
+            <select id="role" name="role" required>
+                <option value="admin">Admin</option>
+                <option value="proprietaire">Propriétaire</option>
+                <option value="visiteur">Visiteur</option>
+            </select>
+            
+            <label for="nom_utilisateur">Nom d'utilisateur :</label>
+            <input type="text" id="nom_utilisateur" name="nom_utilisateur" placeholder="Entrez votre nom d'utilisateur" required>
+            
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Entrez votre mot de passe" required>
+            
+            <button type="submit">Se Connecter</button>
+        </form>
+        
+        <p>Pas encore inscrit ? <a href="creer_compte.html">Créer un compte</a></p>
     </div>
 </body>
 </html>
