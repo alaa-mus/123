@@ -11,55 +11,64 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f9;
+            background: url('ch.jpg') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .register-container {
-            background-color: white;
-            padding: 40px;
+            background-color: rgba(242, 239, 231, 0.8);
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
+            text-align: center;
+            max-height: 90vh;
+            
+        }
+        .register-container img {
+            max-width: 80px;
+            margin-bottom: 15px;
         }
         .register-container h1 {
-            font-size: 2rem;
-            color: #00509E;
-            text-align: center;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 15px;
         }
         .register-container label {
             font-weight: 500;
             margin-bottom: 5px;
             display: block;
+            text-align: left;
+            font-size: 0.9rem;
         }
         .register-container input,
         .register-container select,
         .register-container button {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 8px;
+            margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         .register-container button {
-            background-color: #00509E;
+            background-color: #000000;
             color: white;
             font-weight: 700;
             cursor: pointer;
             transition: background-color 0.3s;
         }
         .register-container button:hover {
-            background-color: #003366;
+            background-color: #012b55;
         }
         .register-container p {
             text-align: center;
             margin-top: 10px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         .register-container p a {
             color: #00509E;
@@ -72,6 +81,7 @@
 </head>
 <body>
     <div class="register-container">
+        <img src="logo2.png" alt="Logo">
         <h1>Créer un compte</h1>
         <form action="creer_compte.php" method="POST">
             <label for="nom_utilisateur">Nom d'utilisateur:</label>
@@ -92,7 +102,6 @@
         
             <button type="submit">Créer le compte</button>
         </form>
-        
         
         <p>Déjà inscrit ? <a href="connexion.html">Connectez-vous</a></p>
     </div>
